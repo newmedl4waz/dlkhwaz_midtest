@@ -10,6 +10,6 @@ void main() {
     theme: ThemeData(
       primarySwatch: Colors.blue,
     ),
-    home: ListScreen(),
+    home: ListScreen(ListScreen, NoteScreen),
   ));
 }
