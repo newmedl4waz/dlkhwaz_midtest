@@ -12,7 +12,7 @@ class Note {
   Map<String, dynamic> toMap() {
     Map<String, dynamic> data = Map<String, dynamic>();
     if (id != null) {
-      data[''] = id;
+      data['id'] = id;
     }
     data['title'] = title;
     return data;
