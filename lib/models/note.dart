@@ -1,7 +1,6 @@
 class Note {
   int id;
   String title;
-  String content;
   List<Note> notes;
 
   Note({
@@ -13,10 +12,9 @@ class Note {
   Map<String, dynamic> toMap() {
     Map<String, dynamic> data = Map<String, dynamic>();
     if (id != null) {
-      data['id'] = id;
+      data[''] = id;
     }
     data['title'] = title;
-    data['content'] = content;
     return data;
   }
 
@@ -25,7 +23,6 @@ class Note {
     return {
       'id': id,
       'title': title,
-      'content': content,
     }.toString();
   }
 }
