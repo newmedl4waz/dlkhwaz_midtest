@@ -5,19 +5,27 @@
 import 'package:flutter/material.dart';
 
 // import 'note_screen.dart';
-// import '../models/note.dart';
+import '../models/note.dart';
 
 class ListScreen extends StatefulWidget {
   @override
+  final String _title;
+  final List<Note> _notes;
+  ListScreen(this._title, this._notes);
+
   _ListScreenState createState() => _ListScreenState();
 }
 
 class _ListScreenState extends State<ListScreen> {
+  String get title => widget._title;
+
+  List<Note> get notes => widget._notes;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Notes'),
+        title: Text('My Note'),
         actions: [
           CircleAvatar(
             backgroundColor: Colors.blue.shade200,
