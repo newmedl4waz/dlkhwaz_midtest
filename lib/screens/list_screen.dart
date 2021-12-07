@@ -81,6 +81,11 @@ class _ListScreenState extends State<ListScreen> {
             child: Icon(Icons.add),
             tooltip: 'Add a new note',
             onPressed: () {},
+    backgroundColor: const Color(c4),
+    onPressed: () {
+      Navigator.push(
+        context,     
+        MaterialPageRoute(builder: (context) => NotesEdit(['update', {}])),
           ),
         ],
       ),
@@ -89,18 +94,19 @@ class _ListScreenState extends State<ListScreen> {
 
   void handleDelete() async {
     try {
-      //ListScreen notesDb = ListScreen();
-      // await notesDb.initDatabase();
-      // for (int id in selectedNoteIds) {
-      //   int result = await ListScreen._notes(id);
-      // }
-      // await notesDb.closeDatabase();
+      ListScreen notesDb = ListScreen();
+      await notesDb.initDatabase();
+      for (int id in selectedNoteIds) {
+        int result = await ListScreen._notes(id);
+      }
+      await notesDb.closeDatabase();
     } catch (e) {
       print(' delete ');
     } finally {
       setState(() {
-        //selectedNoteIds = [];
       });
     }
   }
+
+
 }
