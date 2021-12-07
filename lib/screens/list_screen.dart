@@ -25,7 +25,7 @@ class _ListScreenState extends State<ListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Note'),
+        title: Text('My Notes'),
         actions: [
           CircleAvatar(
             backgroundColor: Colors.blue.shade200,

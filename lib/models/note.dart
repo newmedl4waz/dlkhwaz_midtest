@@ -1,11 +1,13 @@
 class Note {
   int id;
   String title;
+  String description;
   List<Note> notes;
 
   Note({
     this.id = null,
     this.title = "Note",
+    this.description = "Note",
     List<Note> notes,
   });
 
@@ -15,6 +17,8 @@ class Note {
       data['id'] = id;
     }
     data['title'] = title;
+    data['description'] = description;
+
     return data;
   }
 
@@ -23,6 +27,7 @@ class Note {
     return {
       'id': id,
       'title': title,
+      'description': description,
     }.toString();
   }
 }
