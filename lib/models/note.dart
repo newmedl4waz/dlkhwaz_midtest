@@ -1,8 +1,13 @@
 class Note {
+  int id;
   String title;
-  bool desciption;
+  String description;
+  List<Note> notes;
 
-  Note({this.title, this.desciption});
-
-  Note.copy(Note from) : this(title: from.title, desciption: from.desciption);
+  Note({
+    this.id = null,
+    this.title = "Note",
+    this.description = "Note",
+    List<Note> notes,
+  });
 }
