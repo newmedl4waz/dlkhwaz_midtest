@@ -4,7 +4,7 @@
 
 import 'package:flutter/material.dart';
 
-// import 'note_screen.dart';
+import 'note_screen.dart';
 import '../models/note.dart';
 
 class ListScreen extends StatefulWidget {
@@ -85,5 +85,22 @@ class _ListScreenState extends State<ListScreen> {
         ],
       ),
     );
+  }
+
+  void handleDelete() async {
+    try {
+      //ListScreen notesDb = ListScreen();
+      // await notesDb.initDatabase();
+      // for (int id in selectedNoteIds) {
+      //   int result = await ListScreen._notes(id);
+      // }
+      // await notesDb.closeDatabase();
+    } catch (e) {
+      print(' delete ');
+    } finally {
+      setState(() {
+        //selectedNoteIds = [];
+      });
+    }
   }
 }
