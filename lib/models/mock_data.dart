@@ -8,13 +8,43 @@ final noteList = <Note>[
         title:
             "Flutter is an open-source UI framework for creating native mobile applications. It allows developers to build mobile applications a single codebase")
   ]),
-  Note(title: "Stateful Widgets", notes: []),
+  Note(title: "Stateful Widgets", notes: [
+    Note(
+        title:
+            "The widgets whose state can be altered once they are built are called stateful Widgets.")
+  ]),
   Note(title: "Conditional (ternary) operator", notes: [
     Note(
         title:
             "The conditional (ternary) operator in Dart takes three operands: a condition, first expression (if truthy) and second expression (if falsy).")
-  ])
+  ]),
 ];
+
+final noteListt = <Note>[
+  Note(title: "What is Flutter?", notes: [
+    Note(
+        description:
+            "Flutter is an open-source UI framework for creating native mobile applications. It allows developers to build mobile applications a single codebase")
+  ]),
+  Note(title: "Stateful Widgets", notes: [
+    Note(
+        description:
+            "The widgets whose state can be altered once they are built are called stateful Widgets.")
+  ]),
+  Note(title: "Conditional (ternary) operator", notes: [
+    Note(
+        description:
+            "The conditional (ternary) operator in Dart takes three operands: a condition, first expression (if truthy) and second expression (if falsy).")
+  ]),
+];
+
+
+
+
+
+
+
+
 
 //? Here are some sample data that you can copy-paste in order to create the mock database
 //? --------------------------------------------------------------------------------------
